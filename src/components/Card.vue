@@ -3,13 +3,18 @@
     import Info from './Info.vue';
 
     export default {
-        components: { Image, Info }
+        components: { Image, Info },
+        data() {
+            return {
+                image: undefined
+            };
+        }
     };
 </script>
 
 <template>
     <div class="card">
-        <Image />
+        <Image :show="image" />
         <Info />
     </div>
 </template>
@@ -21,7 +26,7 @@
         border: 3px solid black;
         border-radius: 5px;
         box-shadow: -10px -10px 15px var(--shadow-color);
-        height: 500px;
-        width: 400px;
+        height: 600px;
+        width: 500px;
     }
 </style>
