@@ -19,7 +19,7 @@
 
 <style scoped>
     .images {
-        height: 40%;
+        height: 50%;
         border-bottom: 2px solid black;
         display: flex;
         justify-content: center;
@@ -27,5 +27,6 @@
 
     img {
         max-height: 100%;
+        max-width: 100%;
     }
 </style>

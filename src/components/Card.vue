@@ -8,6 +8,11 @@
             return {
                 image: undefined
             };
+        },
+        methods: {
+            displayImage(value) {
+                this.image = value;
+            }
         }
     };
 </script>
@@ -15,7 +20,7 @@
 <template>
     <div class="card">
         <Image :show="image" />
-        <Info />
+        <Info @show="displayImage"/>
     </div>
 </template>
 
